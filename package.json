@@ -19,6 +19,14 @@
 				"command": "extension.convertToSchema",
 				"title": "Convert JSON to GraohQL Schema"
 			}		
+		],
+		"keybindings": [
+			{
+				"command": "extension.convertToSchema",
+				"key": "ctrl+alt+c",
+				"mac": "shift+cmd+c",
+				"when": "editorTextFocus"
+			}
 		]
 	},
 	"scripts": {
