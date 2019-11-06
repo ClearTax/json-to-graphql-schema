@@ -1,5 +1,5 @@
 # json-to-graphql-schema
-A vscode extension to convert a simple json to GraphQl schema
+A vscode extension to convert a JSON to GraphQL schema
 
 # Getting Started
 * Clone this repo
@@ -9,4 +9,4 @@ A vscode extension to convert a simple json to GraphQl schema
 * Run the Convert JSON to GraohQL Schema command from the Command Palette (⇧⌘P) or shift+cmd+c on mac or ctrl+alt+c on other devices which will open converted GraphQl schema into new file.
 ## Built With
 
-* [json-to-simple-graphql-schema](https://walmartlabs.github.io/json-to-simple-graphql-schema/) - A small library used to convert JSON to GraphQl schema.
+* [json-to-simple-graphql-schema](https://walmartlabs.github.io/json-to-simple-graphql-schema/) - Transforms JSON input into a GraphQL schema.

@@ -1,7 +1,7 @@
 {
 	"name": "jsontographqlschema",
 	"displayName": "jsonToGraphqlSchema",
-	"description": "",
+	"description": "JSON to GraphQL Schema Conversion VSCode Extension",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.37.1"
@@ -18,7 +18,7 @@
 			{
 				"command": "extension.convertToSchema",
 				"title": "Convert JSON to GraohQL Schema"
-			}		
+			}
 		],
 		"keybindings": [
 			{
