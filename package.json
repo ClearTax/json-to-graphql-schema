@@ -7,7 +7,13 @@
 		"vscode": "^1.37.1"
 	},
 	"categories": [
+		"Formatters",
 		"Other"
+	],
+	"keywords": [
+		"json",
+		"graphql",
+		"convert"
 	],
 	"activationEvents": [
 		"onCommand:extension.convertToSchema"
