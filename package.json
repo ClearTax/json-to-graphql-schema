@@ -23,7 +23,7 @@
 		"keybindings": [
 			{
 				"command": "extension.convertToSchema",
-				"key": "ctrl+alt+c",
+				"key": "ctrl+shift+c",
 				"mac": "shift+cmd+c",
 				"when": "editorTextFocus"
 			}
