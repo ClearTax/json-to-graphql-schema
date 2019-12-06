@@ -40,18 +40,33 @@
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
+		"lint:js:fix": "npm run lint:js -- --fix",
+		"lint:js": "./node_modules/.bin/eslint './src/**/*.{js,ts,tsx}' --quiet",
+		"lint": "npm run lint:js && npm run lint:css"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^5.2.6",
 		"@types/node": "^10.12.21",
 		"@types/vscode": "^1.38.0",
+		"@typescript-eslint/eslint-plugin": "^2.10.0",
+		"@typescript-eslint/parser": "^2.10.0",
 		"@walmartlabs/json-to-simple-graphql-schema": "^2.0.0",
+		"eslint": "^6.7.2",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-plugin-eslint-comments": "^3.1.2",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-json": "^2.0.1",
+		"eslint-plugin-prettier": "^3.1.1",
+		"eslint-plugin-promise": "^4.2.1",
 		"glob": "^7.1.4",
 		"mocha": "^6.1.4",
+		"prettier": "^1.19.1",
 		"tslint": "^5.12.1",
 		"typescript": "^3.3.1",
 		"vscode-test": "^1.2.0"
+	},
+	"dependencies": {
+		"eslint-config-airbnb": "^18.0.1"
 	}
 }

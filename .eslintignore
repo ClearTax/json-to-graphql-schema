@@ -1,0 +1,8 @@
+!.eslintrc.js
+!.prettierrc.js
+.vscode
+.github
+node_modules
+build
+dist
+lint-report.html
