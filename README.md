@@ -1,9 +1,9 @@
 # json-to-graphql-schema
-A vscode extension to convert a JSON to GraphQL schema
+A vscode extension to convert any JSON input to GraphQL Schema using [json-to-simple-graphql-schema](https://github.com/walmartlabs/json-to-simple-graphql-schema).
 
 ### See it in action
 * Add any JSON output into new empty file
-* Now Run the `Convert JSON to GraohQL Schema` command from the Command Palette For mac (⇧⌘P) or other devices (ctrl+shift+p) or just hit shortcut key `shift+cmd+c` on Mac or `ctrl+shift+c` on other devices which will open converted GraphQl schema into the new empty file.
+* Run the `Convert JSON to GraphQL Schema` command from the Command Palette (`⇧⌘P` for Mac and `Ctrl+Shift+P` for other devices) or just hit shortcut key `Shift+⌘+C` on Mac or `Ctrl+Shift+C` on other devices which will open converted GraphQL schema in a new editor tab.
 
 ![pinchy](https://s5.gifyu.com/images/recording.gif)
 
