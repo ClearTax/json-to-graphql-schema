@@ -1,0 +1,9 @@
+!.eslintrc.js
+!.prettierrc.js
+!.vscode/launch.json
+.vscode
+.github
+node_modules
+build
+dist
+lint-report.html
