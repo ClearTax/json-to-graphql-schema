@@ -2,33 +2,35 @@
 	"name": "jsontographqlschema",
 	"displayName": "JSON To GraphQL Schema Convertor",
 	"description": "JSON to GraphQL Schema Conversion VSCode Extension",
-	"version": "0.0.1",
+	"publisher": "ClearTaxEngineering",
+	"author": "ClearTax Engineering",
+	"version": "1.0.1",
 	"engines": {
-		"vscode": "^1.37.1"
+		"vscode": "^1.47.0"
+	},
+	"icon": "images/pinchy.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ClearTax/json-to-graphql-schema"
 	},
 	"categories": [
 		"Formatters",
 		"Other"
 	],
-	"keywords": [
-		"json",
-		"graphql",
-		"convert"
-	],
 	"activationEvents": [
-		"onCommand:extension.convertToSchema"
+		"onCommand:jsontographqlschema.convertToSchema"
 	],
-	"main": "./out/extension",
+	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.convertToSchema",
+				"command": "jsontographqlschema.convertToSchema",
 				"title": "Convert JSON to GraohQL Schema"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "extension.convertToSchema",
+				"command": "jsontographqlschema.convertToSchema",
 				"key": "ctrl+shift+c",
 				"mac": "shift+cmd+c",
 				"when": "editorTextFocus"
@@ -38,42 +40,26 @@
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
 		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"lint:js:fix": "npm run lint:js -- --fix",
-		"lint:js": "./node_modules/.bin/eslint './src/**/*.{js,ts,tsx}' --quiet",
-		"lint": "npm run lint:js && npm run lint:css"
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
 		"@cleartax/eslint-config": "^1.3.2",
 		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.38.0",
-		"@typescript-eslint/eslint-plugin": "^2.20.0",
-		"@typescript-eslint/parser": "^2.10.0",
-		"@walmartlabs/json-to-simple-graphql-schema": "^2.0.0",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"@types/vscode": "^1.47.0",
+		"@typescript-eslint/eslint-plugin": "^2.30.0",
+		"@typescript-eslint/parser": "^2.30.0",
 		"eslint": "^6.8.0",
-		"eslint-config-prettier": "^6.7.0",
-		"eslint-plugin-eslint-comments": "^3.1.2",
-		"eslint-plugin-import": "^2.20.1",
-		"eslint-plugin-jest": "^23.7.0",
-		"eslint-plugin-json": "^2.0.1",
-		"eslint-plugin-jsx-a11y": "^6.2.3",
-		"eslint-plugin-lodash": "^6.0.0",
-		"eslint-plugin-markdown": "^1.0.1",
-		"eslint-plugin-prettier": "^3.1.2",
-		"eslint-plugin-promise": "^4.2.1",
-		"eslint-plugin-react": "^7.18.3",
-		"eslint-plugin-react-hooks": "^2.4.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"prettier": "^1.19.1",
-		"tslint": "^5.12.1",
-		"typescript": "^3.7.5",
-		"vscode-test": "^1.2.0"
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
 	},
 	"dependencies": {
-		"eslint-config-airbnb": "^18.0.1"
+		"@walmartlabs/json-to-simple-graphql-schema": "^2.0.1"
 	}
 }
