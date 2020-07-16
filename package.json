@@ -2,9 +2,15 @@
 	"name": "jsontographqlschema",
 	"displayName": "JSON To GraphQL Schema Convertor",
 	"description": "JSON to GraphQL Schema Conversion VSCode Extension",
-	"version": "0.0.1",
+	"publisher": "ClearTaxIndia",
+	"version": "1.0.1",
 	"engines": {
-		"vscode": "^1.37.1"
+		"vscode": "^1.38.0"
+	},
+	"icon": "images/pinchy.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ClearTax/json-to-graphql-schema"
 	},
 	"categories": [
 		"Formatters",

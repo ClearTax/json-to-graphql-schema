@@ -1,18 +1,17 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-  	"target": "es6",
-  	"outDir": "out",
-  	"lib": [
-  		"es6"
-	],
-	"sourceMap": true,
-	"rootDir": "src",
-  },
-	"include": [
-	  "src"
-	],
-  "exclude": [
-  	"node_modules",
-  ]
-}
+	"compilerOptions": {
+	  "rootDir": "./src",
+	  "outDir": "out",
+	  "target": "es6",
+	  "module": "commonjs",
+	  "moduleResolution": "node",
+	  "esModuleInterop": true,
+	  "sourceMap": true,
+	  "strict": true,
+	  "forceConsistentCasingInFileNames": true,
+	  "noStrictGenericChecks": true,
+	  "noUnusedLocals": true,
+	  "noUnusedParameters": true
+	},
+	"exclude": [".vscode", "node_modules", "out"]
+  }
